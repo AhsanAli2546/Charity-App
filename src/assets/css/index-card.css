@@ -1,0 +1,68 @@
+@import url("master.css");
+
+.ch-card-title{
+
+  font-style: normal;
+  font-weight: 650;
+  font-size: 19px;
+  line-height: 35px;
+  text-transform: capitalize;
+  color: var(--ch-text-dark);
+
+}
+
+.ch-card-text{
+
+font-size: 14px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+font-family: Nunito;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+  color: #555555;
+  
+}
+
+
+.ch-primary-outline-btn{
+    
+    color:var(--ch-primary);
+
+}
+
+.ch-primary-outline-btn:hover{
+
+  color: #fff;
+  background-color: var(--ch-primary);
+  border-color: var(--ch-primary);
+}
+
+.card>.card-body>.clearfix>.progress-title,
+.card>.card-body>.clearfix>.progress-percentage{
+
+height: 16px;
+left: 332px;
+top: 3189px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height, or 114% */
+
+text-transform: capitalize;
+
+color: var(--ch-text-dark);
+}

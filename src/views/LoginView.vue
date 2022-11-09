@@ -1,9 +1,9 @@
-<!-- <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script> -->
+<script setup>
+//import TheWelcome from '../components/TheWelcome.vue'
+//import AdminLayout from '../layouts/AdminLayout.vue'
+
+</script>
 
 <template>
-  <main>
     <h1 class="text-primary">Login</h1>
-  </main>
 </template>

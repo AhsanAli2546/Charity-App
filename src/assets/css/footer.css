@@ -1,0 +1,5 @@
+@import url("master.css");
+
+footer{
+    background-color: var(--ch-secandary);
+}

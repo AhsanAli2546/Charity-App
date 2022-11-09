@@ -1,0 +1,157 @@
+@import url("../lib/bootstrap-dist/css/bootstrap.css");
+@import url("../lib/fontawesome/css/all.min.css"); 
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&family=Montserrat:wght@200;300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&family=Montserrat:wght@200;300;400;600&family=Playfair+Display:wght@900&display=swap");
+
+:root{
+    --ch-primary:#219D80;
+    --ch-primary-light: #EDF7F5;
+    --ch-secandary: #22262F;
+    --ch-text-dark:#252A34;
+    --ch-text-light:#444444;
+    --ch-text-coal:#555555;
+}
+
+*{
+  margin: 0px ;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px !important;
+  padding: 0px !important;
+  background-color: #ffff;
+}
+
+.ch-bg-primary{
+  background-color: var(--ch-primary);
+}
+
+.ch-bg-primary-light{
+  background-color: var(--ch-primary-light);
+}
+
+.ch-btn{
+  
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  /* border-radius: 0.25rem; */
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  
+
+}
+
+.ch-primary-btn{
+
+  color: #fff;
+  background-color: var(--ch-primary);
+  border-color: var(--ch-primary);
+
+}
+
+.ch-primary-btn:hover {
+  color: #fff;
+  background-color: #1c8068;
+  border-color: #1c8068;
+}
+
+.ch-primary-outline-btn{
+
+  /* color: #fff; */
+  border-color: var(--ch-primary);
+
+}
+
+.ch-primary-outline-btn:hover{
+
+  color: #fff;
+  background-color: var(--ch-primary);
+  border-color: var(--ch-primary);
+
+}
+
+.ch-btn-white-outline{
+
+  background-color: transparent;
+  outline: #ffffff;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.ch-btn-white-outline:hover{
+  background-color: #ffffff;
+  color:black;
+}
+
+.font-montserrat{
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.font-playfair{
+  font-family: 'Playfair Display', serif;
+}
+
+.font-nunito{
+  font-family: 'Nunito', sans-serif;
+}
+
+.z-index-1{
+  z-index: 1 !important;
+}
+
+.ch-text-dark{
+  color: var(--ch-text-dark) !important;
+}
+
+.ch-text-light{
+  color: var(--ch-text-light) !important;
+}
+
+.ch-text-primary{
+  color:var(--ch-primary);
+}
+
+.ch-text-coal{
+  color: var(--ch-text-coal);
+}
+
+.sec-heading{
+    
+  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+  /* or 128% */
+  text-transform: capitalize;
+  color: var(--ch-text-dark);
+
+}
+
+.sec-text{
+
+  height: 78px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  text-transform: capitalize;
+  color: var(--ch-text-light);
+
+}
