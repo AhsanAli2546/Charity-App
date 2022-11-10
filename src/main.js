@@ -11,7 +11,7 @@ import './assets/css/index-welcome-sec.css'
 import './assets/css/index-aboutus-sec.css'
 import './assets/css/index-card.css'
 import './assets/css/footer.css'
-import './assets/lib/bootstrap-dist/js/bootstrap.min.js'
+//import './assets/lib/bootstrap-dist/js/bootstrap.min.js'
 //import './assets/lib/bootstrap-dist/css/bootstrap.min.css'
 //import'./assets/lib/fontawesome/css/all.min.css'
 
