@@ -15,7 +15,9 @@ import './assets/css/footer.css'
 
 
 
-//import './assets/lib/bootstrap-dist/js/bootstrap.min.js'
+
+import './assets/lib/bootstrap-dist/js/bootstrap.min.js'
+import './assets/admin/js/sidebar'
 //import './assets/lib/bootstrap-dist/css/bootstrap.min.css'
 //import'./assets/lib/fontawesome/css/all.min.css'
 

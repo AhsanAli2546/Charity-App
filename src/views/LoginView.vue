@@ -5,5 +5,7 @@
 </script>
 
 <template>
-    <h1 class="text-primary">Login</h1>
+
+<!-- Button trigger modal -->
+
 </template>
