@@ -55,7 +55,7 @@
             <button class="ch-btn ch-primary-btn" href="#">Contact Us</button>
           </li> -->
           <li class="nav-item me-3">
-            <a class="nav-link" href="#">Login</a>
+            <router-link to="/login" class="nav-link">Login</router-link>
           </li>
           <li class="nav-item me-3">
             <a class="nav-link" href="#">Registration</a>
