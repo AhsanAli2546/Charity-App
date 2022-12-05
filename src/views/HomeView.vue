@@ -12,7 +12,7 @@ import SponserSec from "../components/SponsersSec.vue";
   <DefaultLayout>
     <main class="m-0 p-0">
       
-      <AboutUsSec />
+      <!-- <AboutUsSec /> -->
 
       <WelcomeSec />
 

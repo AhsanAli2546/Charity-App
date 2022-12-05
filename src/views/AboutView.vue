@@ -1,9 +1,9 @@
 <template>
   <DefaultLayout>
     <AboutView />
-    <WelcomeSec />
-    <FeaturesAboutSecVue />
-    <FunfactSec />
+    <!-- <WelcomeSec /> -->
+    <!-- <FeaturesAboutSecVue /> -->
+    <!-- <FunfactSec /> -->
   </DefaultLayout>
 </template>
 
