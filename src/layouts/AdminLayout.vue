@@ -1,5 +1,5 @@
 <template>
-  <!-- <div class="page-flex">
+  <div class="page-flex">
     <aside class="sidebar">
       <div class="sidebar-start">
         <div class="sidebar-head">
@@ -163,8 +163,8 @@
       </div>
     </aside>
     <slot />
-  </div> -->
-
+  </div> 
+<!----
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="bootstrap" viewBox="0 0 118 94">
     <title>Bootstrap</title>
@@ -304,12 +304,12 @@
 
    
   </div>
-  <!-- <slot>
+  <slot>
 
-  </slot> -->
+  </slot> 
 </main>
 
-  <!-- <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+  !-- <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
     id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Charity</h5>
@@ -339,23 +339,23 @@
 </div>
     </div>
     
-  </div> -->
-  <!--Main Navigation-->
-
+  </div> --
+  !--Main Navigation-->
  
 </template>
 
 <script setup>
-// import "../assets/admin/css/style.min.css";
+import "../assets/admin/css/style.min.css";
 // // Custom scripts
-// import "../assets/admin/js/script.js";
+ import "../assets/admin/js/script.js";
 // //Chart library
 // //p
 
-// import "../assets/admin/plugins/chart.min.js";
+ import "../assets/admin/plugins/chart.min.js";
 // // Icons library
-// import "../assets/admin/plugins/feather.min.js";
-import "../assets/admin/js/sidebar"
+import "../assets/admin/plugins/feather.min.js";
+import "../assets/admin/js/script.js";
+//import "../assets/admin/js/sidebar"
 </script>
 
 <style scoped>

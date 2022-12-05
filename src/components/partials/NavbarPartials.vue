@@ -45,65 +45,10 @@
           </li> -->
           <li class="nav-item me-3">
             <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Login
+              Sign In
             </a>
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-              aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog ">
-                <div class="modal-content card ch-bg-primary-light border-0">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Charity</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <div
-                      class="PrimaryColor d-flex aligns-items-center justify-content-center mx-auto card w-100 shadow-sm p-3 mb-5 bg-white rounded ">
-                      <div class="d-flex flex-column ">
-
-                        <h1 class="text-center ch-text-primary">Sign in with your email</h1>
-                        <div class="col-12">
-                          <span class="mx-5 my-1"></span>
-                          <span>Do not have an Account?</span>
-                          <a href="#" class="ch-text-primary font-montserrat text-decoration-none">Sigin Up</a>
-                        </div>
-
-
-                      </div>
-                      <span class="my-2"></span>
-                      <form id="form" action="" method="post">
-                        <div class="mb-3">
-
-                          <input name="email" placeholder="Email Address" type="text"
-                            class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-                        </div>
-                        <!-- <div class="mb-3">
-
-                          <input name="password" placeholder="Password" type="password"
-                            class="form-control" id="exampleInputPassword1">
-
-                       
-                        </div> -->
-                        <div class="mb-3">
-                          <button type="submit" value="Validate" name="login"
-                            class="ch-btn ch-primary-btn w-100">Continue</button>
-                        </div>
-                      </form>
-                      <div class="text-center">
-                      <a href="#" class="ch-text-primary font-montserrat text-decoration-none">Forget your Password?</a>
-
-                    </div>
-                    </div>
-                  
-                  </div>
-                  <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
-                  </div> -->
-                </div>
-              </div>
-            </div>
-            <!-- <router-link to="/login" class="nav-link">Login</router-link> -->
+            
+            <LoginModel/>
           </li>
           <li class="nav-item me-3">
             <a class="nav-link" href="#">Registration</a>
@@ -117,3 +62,16 @@
     </div>
   </nav>
 </template>
+
+<script>
+  import LoginModel from "../Models/LoginModel.vue"
+
+
+export default {
+  name: "NavbarPartials",
+  components: {
+    LoginModel,
+  }
+};
+
+</script>

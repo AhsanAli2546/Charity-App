@@ -105,9 +105,9 @@
                 <span class="nav-user-img">
                   <picture
                     ><source
-                      srcset="./img/avatar/avatar-illustrated-02.webp"
+                      srcset="../../assets/admin/img/avatar/avatar-illustrated-02.webp"
                       type="image/webp" />
-                    <img src="./img/avatar/avatar-illustrated-02.png" alt="User name"
+                    <img src="../../assets/admin/img/avatar/avatar-illustrated-02.png" alt="User name"
                   /></picture>
                 </span>
               </button>
@@ -625,5 +625,17 @@
 </template>
 
 <script setup>
-import AdminLayout from "../../layouts/AdminLayout.vue";
+import AdminLayout from "@/layouts/AdminLayout.vue";
+
+
+// import { onMounted } from 'vue';
+// import {useRoute} from 'vue-router';
+
+// const el = ref();
+
+// onMounted(() => {
+//   const route = useRoute();
+//   console.log("token: "+ route.param.token);
+ 
+// })
 </script>
