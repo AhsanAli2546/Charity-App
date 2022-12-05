@@ -56,6 +56,11 @@ const router = createRouter({
       component: () => import('../views/admin/UserView.vue')
     },
     {
+      path:'/donate',
+      name: 'donte',
+      component: () => import('../views/DonateView.vue')
+    },
+    {
       path: "/:catchAll(.*)", // Unrecognized path automatically matches 404
       //redirect: '/404',
       component: () => import('../views/404.vue')

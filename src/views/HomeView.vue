@@ -1,5 +1,4 @@
 <script setup>
-import DefaultLayout from "../layouts/DefaultLayout.vue";
 import AboutUsSec from "../components/AboutUsSec.vue";
 import WelcomeSec from "../components/WelcomeSec.vue";
 import CausesSec from "../components/CausesSec.vue";

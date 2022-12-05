@@ -8,6 +8,12 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import store from './stores'
 
+
+//===========================================
+//            Register Component
+import DefaultLayout from './layouts/DefaultLayout.vue'
+
+
 //===================================
 //            Plugin Import
 //import DataTable from 'datatables.net-vue3'
@@ -33,6 +39,8 @@ import './assets/admin/js/sidebar'
 
 
 const app = createApp(App)
+app.component('App',App)
+app.component('DefaultLayout',DefaultLayout)
 
 //app.use(createPinia())
 app.use(router)
