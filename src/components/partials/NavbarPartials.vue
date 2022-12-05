@@ -4,15 +4,8 @@
       <a class="navbar-brand mx-auto" href="index.html">
         <img src="../../assets/images/template-assets/logo.png" alt="company logo" />
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,20 +22,16 @@
             <!-- <a class="nav-link" href="#">About</a> -->
           </li>
           <li class="nav-item dropdown me-3">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               Pages
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
@@ -51,11 +40,15 @@
           </li>
         </ul>
         <ul class="navbar-nav">
-          <li class="nav-item me-2">
+          <!-- <li class="nav-item me-2">
             <button class="ch-btn ch-primary-btn" href="#">Contact Us</button>
-          </li>
+          </li> -->
           <li class="nav-item me-3">
-            <a class="nav-link" href="#">Login</a>
+            <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Sign In
+            </a>
+            
+            <LoginModel/>
           </li>
           <li class="nav-item me-3">
             <a class="nav-link" href="#">Registration</a>
@@ -69,3 +62,16 @@
     </div>
   </nav>
 </template>
+
+<script>
+  import LoginModel from "../Models/LoginModel.vue"
+
+
+export default {
+  name: "NavbarPartials",
+  components: {
+    LoginModel,
+  }
+};
+
+</script>

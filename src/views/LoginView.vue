@@ -1,9 +1,15 @@
 <script setup>
 //import TheWelcome from '../components/TheWelcome.vue'
-//import AdminLayout from '../layouts/AdminLayout.vue'
+import DefaultLayout from '../layouts/DefaultLayout.vue'
 
 </script>
 
 <template>
-    <h1 class="text-primary">Login</h1>
+
+<!-- Button trigger modal -->
+
+<DefaultLayout>
+    <h1>Login</h1>
+</DefaultLayout>
+
 </template>
