@@ -6,12 +6,12 @@ import CarouselSec from "../components/CarouselSec.vue";
 import FunfactSec from "../components/FunfactSec.vue";
 import LatestnewsSec from "../components/LatestnewsSec.vue";
 import SponserSec from "../components/SponsersSec.vue";
+
 </script>
 
 <template>
   <DefaultLayout>
     <main class="m-0 p-0">
-      
       <!-- <AboutUsSec /> -->
 
       <WelcomeSec />

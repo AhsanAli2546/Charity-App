@@ -69,19 +69,16 @@ export default{
     },
     methods:{
         login(){
-            console.log("email: " + this.email);
-            alert(this.email);
+
             axios.post('http://localhost:3000/charity/auth/sendMagicLink', 
 	            { 
-		            Email: this.email, 
+		            email: this.email, 
 		            redirectTo: this.returnUrl 
 	            } )
                 .then(Response =>{
-                    console.log(Response.data);
-                    window.open(Response.data,"_selt");
+                    window.open(Response.data)
+                    //window.open(Response.data,"_self");
                 });
-
-            //console.log(result);
         }
     }
 }

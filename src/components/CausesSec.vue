@@ -201,3 +201,7 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+@import "../assets/css/index-card.css";
+</style>

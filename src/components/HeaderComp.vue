@@ -1,19 +1,9 @@
-<script>
-import NavbarPartials from "./partials/NavbarPartials.vue";
-
-export default {
-  name: "HeaderComp",
-  components: {
-    NavbarPartials,
-  },
-};
-</script>
 
 <template>
   <header class="w-100">
     <NavbarPartials />
     <section class="container text-center py-5">
-      <h4 class="h6 font-montserrat text-white">Give Hope For Homeless</h4>
+      <h4 class="h6 font-montserrat text-white">Give Hope For Homeless TOKEN</h4>
       <h1 class="text-white header-sec-heading font-playfair py-1">
         Helping Each Other <br />
         Can Make World Better
@@ -30,6 +20,18 @@ export default {
     </section>
   </header>
 </template>
+
+<script>
+import NavbarPartials from "./partials/NavbarPartials.vue";
+
+export default {
+  name: "HeaderComp",
+  components: {
+    NavbarPartials,
+  },
+};
+</script>
+
 
 <style>
 /*@import url('../assets/css/index-header.css');*/
