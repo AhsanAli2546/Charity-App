@@ -1,25 +1,23 @@
 <template>
-  <div class="container mt-5">
-    <h1 class="display-3">Token: {{getToken}}</h1>
-    <h1 class="display-3">RefreshToken: {{getRefreshToken}}</h1>
-    <Vue3EasyDataTable :headers="headers" :items="items" />
-    <p>
-      
-    </p>
-  </div>
+  <!-- <div class="container mt-5"> -->
+  <!-- <h1 class="display-3">Token: {{ getToken }}</h1> -->
+  <!-- <h1 class="display-3">RefreshToken: {{ getRefreshToken }}</h1> -->
+  <Vue3EasyDataTable :headers="head" :items="items" />
+  <!-- <p></p> -->
+  <!-- </div> -->
 </template>
 
 
 <script>
 //import {useRoute} from 'vue-router';
 import Vue3EasyDataTable from "vue3-easy-data-table";
-import axios from 'axios';
+import axios from "axios";
 //import type { Header, Item } from "vue3-easy-data-table";
 
 export default {
   name: "UserView",
   components: {
-    Vue3EasyDataTable
+    Vue3EasyDataTable,
   },
   data() {
     // const headers: Header[] = [
@@ -88,18 +86,19 @@ export default {
     //   },
     // ];
 
-    // const headers= [
-    //   { text: "Name", value: "name" },
-    //   { text: "Email (cm)", value: "email", sortable: true },
-    //   { text: "Country (kg)", value: "password", sortable: true },
-    //   { text: "Gender", value: "gender", sortable: true },
-    //   { text: "Role", value: "role", sortable: true },
-    //   { text: "Created on", value: "isVerified", sortable: true },
-    //   { text: "Account Status", value: "status", sortable: true },
-    //   { text: "Verification Status", value: "isVerified", sortable: true },
-    // ];
+    const head = [
+      // { text: "User id", value: "_id", sortable: true },
+      { text: "Name", value: "name", sortable: true },
+      { text: "Role", value: "role", sortable: true },
+      { text: "Email", value: "email", sortable: true },
+      { text: "Gender", value: "gender", sortable: true },
+      { text: "Created on", value: "createdOn", sortable: true },
+      { text: "Country", value: "country", sortable: true },
+      { text: "Account Status", value: "status", sortable: true },
+      { text: "Verification Status", value: "isVerified", sortable: true },
+    ];
 
-    // const items= [
+    // const items = [
     //   {
     //     _id: "638c78a81427ecd66fd15ced",
     //     name: "Muhammad Ahmad",
@@ -154,65 +153,62 @@ export default {
     //   },
     // ];
 
-    this.headers=[
-      { text: "Name", value: "name" },
-      { text: "Email (cm)", value: "email", sortable: true },
-      { text: "Country (kg)", value: "password", sortable: true },
-      { text: "Gender", value: "gender", sortable: true },
-      { text: "Role", value: "role", sortable: true },
-      { text: "Created on", value: "isVerified", sortable: true },
-      { text: "Account Status", value: "status", sortable: true },
-      { text: "Verification Status", value: "isVerified", sortable: true },
-     ]
+    // this.headers = [
+    //   { text: "Name", value: "name" },
+    //   { text: "Email (cm)", value: "email", sortable: true },
+    //   { text: "Country (kg)", value: "password", sortable: true },
+    //   { text: "Gender", value: "gender", sortable: true },
+    //   { text: "Role", value: "role", sortable: true },
+    //   { text: "Created on", value: "isVerified", sortable: true },
+    //   { text: "Account Status", value: "status", sortable: true },
+    //   { text: "Verification Status", value: "isVerified", sortable: true },
+    // ];
 
     return {
       //token:'',
-      userName:'',
-      items:[],
-      headers:{},  //already used with get request for sending headers
+      userName: "",
+      items: [],
+      head, //already used with get request for sending headers
       //header:{}
     };
   },
-  computed:{
-    getToken(){
+  computed: {
+    getToken() {
       return this.$store.getters.GetToken;
     },
-    
-    getRefreshToken(){
+
+    getRefreshToken() {
       return this.$store.getters.GetRefreshToken;
-    }
+    },
   },
 
   //Hook
-  mounted(){
-            
-
+  mounted() {
     //this.token = this.getToken
 
-    //console.log("Token from store in users: " + this.getToken);
-    var res =  axios.get("http://localhost:3000/charity/admin/getAllUsers",{
-    headers: {
-      'Authorization': 'Bearer ' + this.getToken
-    }
-  })
-      .then(res =>{
-        this.items = res.data;
-        console.log("status code: " + res.status)
-        console.log("resoponse uid: "+this.items);
-        console.log("Users REsponse name: " + res.data);
-        //const map = new Map();
-        //map = res.data;
-        //const values = Array.from(map.values());
-        //this.items = Array.from(res.data);
-        
-        res.data.forEach(element => {
-          console.log("User Id: "+element.name);
-        });
-      }).catch(err =>{
+    console.log("Token from store in users: " + this.getToken);
+    axios
+      .get("http://localhost:3000/charity/admin/getAllUsers", {
+        headers: {
+          Authorization: "Bearer " + this.getToken,
+        },
+      })
+      .then((res) => {
+        console.log("status code: " + res.status);
+        console.log("resoponse uid: " + this.items);
+        console.log("Users Response name: " + res.data);
+
+        for (var key in res.data) {
+          console.log(res.data[key]);
+          this.items.push(res.data[key]);
+        }
+        console.log(this.items);
+      })
+      .catch((err) => {
         console.log(err);
         //window.open('http://localhost:5173','_self');
       });
-  }
+  },
 };
 </script>
 <style>
