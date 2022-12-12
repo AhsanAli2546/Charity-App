@@ -1,10 +1,10 @@
 <template>
-  <!-- <div class="container mt-5"> -->
-  <!-- <h1 class="display-3">Token: {{ getToken }}</h1> -->
-  <!-- <h1 class="display-3">RefreshToken: {{ getRefreshToken }}</h1> -->
-  <Vue3EasyDataTable :headers="head" :items="items" />
-  <!-- <p></p> -->
-  <!-- </div> -->
+  <div class="container mt-5">
+    <h4>Token: {{ getToken }}</h4>
+    <h4>RefreshToken: {{ getRefreshToken }}</h4>
+    <Vue3EasyDataTable :headers="head" :items="items" />
+    <p></p>
+  </div>
 </template>
 
 
