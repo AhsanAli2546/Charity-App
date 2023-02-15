@@ -5,7 +5,7 @@ export default class DataServices{
     SetName(name){
         this.Name = name;
     }
-
+    //Get name function
     GetName(){
         return this.Name;
     }
